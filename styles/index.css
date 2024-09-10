@@ -1,0 +1,20 @@
+main {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 60px 30px 0;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.evento-principal {
+    display: inline;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+p {
+    display: inline;
+}
