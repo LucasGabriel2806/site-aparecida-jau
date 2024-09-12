@@ -22,6 +22,7 @@ body {
 nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.304);
 }
 
 nav ul {
