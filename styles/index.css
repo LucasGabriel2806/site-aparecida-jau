@@ -1,0 +1,39 @@
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 60px;
+    margin: auto;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+img.primeira-imagem {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.primeiro-texto {
+    align-self: flex-start;
+}
+
+.primeiro-texto h1 {
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 750px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    img.primeira-imagem {
+        margin-bottom: 10px;
+    }
+
+}
