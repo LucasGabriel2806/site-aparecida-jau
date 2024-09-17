@@ -15,7 +15,7 @@ main {
 
 img.primeira-imagem {
     width: 300px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .primeiro-texto {
@@ -24,6 +24,49 @@ img.primeira-imagem {
 
 .primeiro-texto h1 {
     font-size: 1.4em;
+}
+
+.evangelho-do-dia {
+    background: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.884)),
+    url("../img/evangelho-do-dia.png");
+}
+
+.santo-do-dia {
+    background: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.884)),
+    url("../img/santo-do-dia.png");
+}
+
+.evangelho-do-dia, .santo-do-dia {
+    margin-top: 50px;
+    padding: 200px 100px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+
+.evangelho-do-dia:hover, .santo-do-dia:hover {
+    box-shadow: 7px 7px black;
+}
+
+.evangelho-do-dia .titulo, .santo-do-dia .titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+}
+
+.dia {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em
 }
 
 @media only screen and (max-width: 750px) {
