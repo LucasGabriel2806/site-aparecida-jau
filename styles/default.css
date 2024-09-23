@@ -103,6 +103,16 @@ nav a:hover {
     }
 }
 
+/* MAIN */
+
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 60px;
+    margin: auto;
+}
+
 
 /* FOOTER */
 

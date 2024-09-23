@@ -1,11 +1,3 @@
-main {
-    background-color: white;
-    min-width: 400px;
-    max-width: 800px;
-    padding: 60px;
-    margin: auto;
-}
-
 .container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
