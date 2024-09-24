@@ -1,0 +1,164 @@
+/* ESTILOS PADRÃO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: rgba(1, 64, 180, 0.829);
+    --red: #f06272;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../img/bg-entrar.png);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.wrapper {
+    background-color: white;
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form > div { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form label svg {
+    fill: white;
+}
+
+form input {
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid rgba(0, 0, 0, 0.116);
+    border-left: none;
+    background-color: rgba(0, 0, 0, 0.116);
+    transition: 150ms ease;
+}
+
+form input:hover {
+    border-color: rgba(0, 0, 0, 0.589);
+}
+
+form input:focus {
+    outline: none;
+    border-color: black;
+}
+
+div:has(input:focus) > label {
+    background-color: black;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover {
+    background-color: black;
+}
+
+form button:focus {
+    outline: none;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
+}
+
+form div.incorrect label {
+    background-color: var(--red);
+}
+
+form div.incorrect input {
+    border-color: var(--red);
+}
+
+#error-message {
+    color: var(--red)
+}
