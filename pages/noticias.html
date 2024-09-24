@@ -8,11 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="img/logos-icons/aparecida-circ.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/logos-icons/aparecida-circ.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="../styles/default.css">
 
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="../styles/noticias.css">
 
     <title>APARECIDA JAU</title>
 
@@ -23,7 +23,7 @@
         
         <nav>
 
-            <a href="./index.html"><img class="logo-aparecida" src="img/logos-icons/logo-aparecida.png" alt=""></a>     
+            <a href="../index.html"><img class="logo-aparecida" src="../img/logos-icons/logo-aparecida.png" alt=""></a>     
 
             <!-- Sidebar -->
 
@@ -31,17 +31,17 @@
 
                 <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
 
-                <li><a href="./pages/paroquia.html">Paróquia</a></li>
+                <li><a href="./paroquia.html">Paróquia</a></li>
 
-                <li><a href="./pages/noticias.html">Noticias</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
 
-                <li><a href="./pages/boletim-informativo.html">Boletim Informativo</a></li>
+                <li><a href="./boletim-informativo.html">Boletim Informativo</a></li>
 
-                <li><a href="./pages/contato.html">Contato</a></li>
+                <li><a href="./contato.html">Contato</a></li>
 
-                <li><a href="./pages/entrar.html">Login</a></li>
+                <li><a href="./entrar.html">Login</a></li>
 
             </ul>
 
@@ -49,17 +49,17 @@
 
             <ul>
 
-                <li class="hideOnMobile"><a href="./index.html">Inicio</a></li>
+                <li class="hideOnMobile"><a href="../index.html">Inicio</a></li>
 
-                <li class="hideOnMobile"><a href="./pages/paroquia.html">Paróquia</a></li>
+                <li class="hideOnMobile"><a href="./paroquia.html">Paróquia</a></li>
                 
-                <li class="hideOnMobile"><a href="./pages/noticias.html">Noticias</a></li>
+                <li class="hideOnMobile"><a href="./noticias.html">Noticias</a></li>
 
-                <li class="hideOnMobile"><a href="./pages/boletim-informativo.html">Boletim Informativo</a></li>
+                <li class="hideOnMobile"><a href="./boletim-informativo.html">Boletim Informativo</a></li>
 
-                <li class="hideOnMobile"><a href="./pages/contato.html">Contato</a></li>
+                <li class="hideOnMobile"><a href="./contato.html">Contato</a></li>
 
-                <li class="hideOnMobile"><a href="./pages/entrar.html">Login</a></li>
+                <li class="hideOnMobile"><a href="./entrar.html">Login</a></li>
 
                 <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 
@@ -71,9 +71,9 @@
 
     <main>
 
-        <div class="container-grid">
+        <div class="container-grid c1">
             
-            <img class="primeira-imagem" src="img/noticias-eventos/vem-ai-novena-festa-padroeira.PNG" alt="">
+            <img class="primeira-imagem" src="../img/noticias-eventos/vem-ai-novena-festa-padroeira.PNG" alt="">
 
             <div class="primeiro-texto">
 
@@ -85,43 +85,54 @@
 
         </div>
 
-        <div class="container-grid">
+        <hr>
 
-            <a href="https://liturgia.cancaonova.com/pb/" target="_blank">
+        <div class="categorias">
 
-                <div class="evangelho-do-dia">
+            <p>Categorias</p>
 
-                    <p class="titulo">Evangelho do dia</p>
+            <a href="#">Todas</a>
 
-                </div>
-                
-            </a>
+            <a href="./noticias-categorias/noticias.html">Noticias</a>
 
-            <a href="https://santo.cancaonova.com/" target="_blank">
+            <a href="./noticias-categorias/eventos.html">Eventos</a>
 
-                <div class="santo-do-dia">
-
-                    <p class="dia">30</p>
-
-                    <p class="titulo">Santo do dia</p>
-
-                </div>
-
-            </a>
+            <a href="./noticias-categorias/oracoes.html">Orações</a>
 
         </div>
 
-        <h2 class="titulo-ministerios">Ministérios, Pastorais e Movimentos</h2>
+        <div class="container-grid c2">
 
-        <div class="container-grid ministerios-pastorais-movimentos">
+            <div class="sub-container">
+                <a href=""><img src="../img/noticias-eventos/terco-mariano.jpg" alt=""></a>
 
-            <img src="img/ministerios-pastorais-movimentos/terco-dos-homens.png " alt="">
+                <h2>Como rezar o Terço Mariano</h2>
 
-            <img src="img/ministerios-pastorais-movimentos/grupo-de-jovens.png" alt="">
+            </div>
 
-            <img src="img/ministerios-pastorais-movimentos/coroinhas-acoltios.png" alt="">
+            <hr>
 
-            <img src="img/ministerios-pastorais-movimentos/equipe-liturgia.png" alt="">
+            <div class="sub-container">
+                <a href=""><img src="../img/noticias-eventos/terco-sao-jose.jpg" alt=""></a>
+
+                <h2>Como rezar o Terço de São José</h2>
+
+            </div>
+
+            <hr>
+
+            <div class="sub-container">
+                <a href=""><img src="../img/noticias-eventos/terco-sao-lucas.jpg" alt=""></a>
+
+                <h2>Como rezar o Terço de São Lucas</h2>
+
+            </div>
+
+        </div>
+
+        <div class="container-grid c3">
+
+            
 
         </div>
 
@@ -152,12 +163,12 @@
         </div>
 
         <div class="container-img">
-            <a href="./index.html"><img src="img/logos-icons/aparecida-circ.png" alt=""></a>
+            <a href="../index.html"><img src="../img/logos-icons/aparecida-circ.png" alt=""></a>
         </div>
 
     </footer>
     
-    <script src="js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
 
 </body>
 </html>
