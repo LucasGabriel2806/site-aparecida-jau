@@ -22,10 +22,10 @@ img.primeira-imagem {
     font-size: 1.4em;
 }
 
-.container-grid.c2 {
+/* .container-grid.c2 {
     display: inline-grid;
     grid-template-columns: 550px;    
-}
+} */
 
 .categorias {
     /* padding: 0 20px 20px 20px; */
@@ -47,6 +47,7 @@ img.primeira-imagem {
 
 .sub-container {
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 
