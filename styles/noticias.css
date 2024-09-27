@@ -1,3 +1,12 @@
+.noticia-principal {
+    display: grid;
+}
+
+.noticia-principal img {
+    width: 300px;
+    border-radius: 15px;
+}
+
 .container-grid.c1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
