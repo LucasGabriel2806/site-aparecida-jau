@@ -23,24 +23,53 @@ namespace api_aparecida_jau.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            // verifica se email já existe
+            var emailExiste = await _context.Usuarios
+                .AnyAsync(u => u.Email == usuario.Email);
+
+            if (emailExiste)
+                return BadRequest("Email já cadastrado");
+
+            // GERA HASH DA SENHA
+            usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
-            return Ok(usuario);
+            return Ok(new
+            {
+                usuario.Id,
+                usuario.Email,
+                usuario.Tipo
+            });
         }
 
+        // LOGIN
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest login)
         {
             var user = await _context.Usuarios
                 .FirstOrDefaultAsync(u =>
-                    u.Email == login.Email &&
-                    u.Senha == login.Senha);
+                    u.Email == login.Email);
 
             if (user == null)
                 return Unauthorized("Email ou senha inválidos");
 
-            return Ok(user);
+            // COMPARA SENHA COM HASH
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(
+                login.Senha,
+                user.Senha
+            );
+
+            if (!senhaValida)
+                return Unauthorized("Email ou senha inválidos");
+
+            return Ok(new
+            {
+                user.Id,
+                user.Email,
+                user.Tipo
+            });
         }
     }
 }
